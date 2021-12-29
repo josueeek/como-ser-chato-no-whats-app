@@ -1,17 +1,17 @@
 /*
 
-Hoje iremos MUDAR a vida da pessoa que n„o te responde no whatsappp... 
-Que tal enviar mensagens pra ela atÈ obter uma resposta?! 
-Sensacional n„o acha?! Mas, somos devs, correto?! Ent„o vamos automatizar esse paranauÍ!
+Hoje iremos MUDAR a vida da pessoa que n√£o te responde no whatsappp... 
+Que tal enviar mensagens pra ela at√© obter uma resposta?! 
+Sensacional n√£o acha?! Mas, somos devs, correto?! Ent√£o vamos automatizar esse paranau√™!
 
 Para utilizar:
 - Abra o web.whatsapp.com;
-- Selecione a conversa que vocÍ quer;
-- Abra o console e cole o cÛdigo que est· no abaixo;
-- Aguarde e ver· uma mensagem sendo enviada a cada segundo atÈ obter uma mensagem de retorno ou atingir o limite de mensagens.
+- Selecione a conversa que voc√™ quer;
+- Abra o console e cole o c√≥digo que est√° no abaixo;
+- Aguarde e ver√° uma mensagem sendo enviada a cada segundo at√© obter uma mensagem de retorno ou atingir o limite de mensagens.
 - Para parar manualmente use o clearInterval(i)
 
-Use com responsabilidade e moderaÁ„o... O intuito È arrancar um riso ;)
+Use com responsabilidade e modera√ß√£o... O intuito √© arrancar um riso ;)
 
 */
 
@@ -21,8 +21,8 @@ let counter = 0;
 // Se quiser enviar sem limites da zueira (porque the zuera never ends), basta modificar o valor para 0. 
 let limit = 1000;
 
-// Mensagem que ser· enviada 
-let textToSend = "Bruno me responde.";
+// Mensagem que ser√° enviada 
+let textToSend = "Me responde.";
 
 let i = setInterval(function() {
 	window.InputEvent = window.Event || window.InputEvent;
@@ -32,7 +32,7 @@ let i = setInterval(function() {
 	});
     let textbox = document.querySelector('div._1UWac._1LbR4 > div._13NKt.copyable-text.selectable-text'); // trocar caso as classes do WPP web altere
 	
-	// O envio para quando a pessoa responde, caso queira remover, basta apagar essa condiÁ„o. 
+	// O envio para quando a pessoa responde, caso queira remover, basta apagar essa condi√ß√£o. 
 	if ( counter > 0 ) {
         let lastMessage = document.querySelector('div._2wUmf');
 
@@ -51,6 +51,6 @@ let i = setInterval(function() {
 	if (counter === limit && limit !== 0)
 		clearInterval(i);
 
-	console.log("J· enviei " + counter + ' mensagens.')
+	console.log("J√° enviei " + counter + ' mensagens.')
 
-}, 1000); // 1000 = 1 segundo, tempo que ser· enviada cada mensagem. 
+}, 1000); // 1000 = 1 segundo, tempo que ser√° enviada cada mensagem. 
